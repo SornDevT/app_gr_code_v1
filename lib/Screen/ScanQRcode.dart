@@ -42,6 +42,12 @@ class _ScanQRState extends State<ScanQR> {
   String? RBarcode;
 
   @override
+  void initState() {
+    super.initState();
+    initPlatformState();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
